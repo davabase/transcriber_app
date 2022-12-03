@@ -4,6 +4,8 @@ A real-time speech to text transcription app built with Flet and OpenAI Whisper.
 
 ![Screenshot](screenshot.png)
 
+https://user-images.githubusercontent.com/69365652/205431746-1ece6d20-85a6-4112-ba5a-ee050b67268c.mp4
+
 ## Setting Up An Environment
 On Windows:
 ```
