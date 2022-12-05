@@ -221,7 +221,7 @@ def main(page: ft.Page):
             draggable_area2.visible = False
 
             # Save transcription.
-            with open(transcription_file, 'w+') as f:
+            with open(transcription_file, 'w+', encoding='utf-8') as f:
                 f.writelines('\n'.join([item.value for item in transcription_list.controls]))
 
             currently_transcribing = False
