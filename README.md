@@ -60,7 +60,7 @@ which have no onscreen controls.
 
 `transcribe_rate` defines how often audio data shold be transcribed, in seconds. Decreasing this number will make the app more real time but will place more burden on your computer.
 
-`seconds_of_silence_between_lines` defines how much silence (audio with volume lower than the volume threshold) is required to automatically break up the transcription into seperate lines.
+`seconds_of_silence_between_lines` defines how much silence (audio with volume lower than the volume threshold) is required to automatically break up the transcription into separate lines.
 
 `max_record_time` defines the maximum amount of time we should allow a recording to be transcribed. Longer transcriptions take longer to transcribe and may no longer be real time. If you have audio with no silence in it, consider reducing this to break up the audio in to smaller chunks.
 
