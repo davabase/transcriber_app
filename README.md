@@ -16,10 +16,11 @@ pip install -r requirements.txt
 ```
 On Unix:
 ```
+git clone https://github.com/davabase/transcriber_app/
 cd transcriber_app
 python3.7 -m venv venv
 source venv/bin/activate
-pip intsall -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Running From Source
