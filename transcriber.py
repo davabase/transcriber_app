@@ -24,6 +24,7 @@ import io
 import os
 import numpy
 import pyaudio
+import torch
 import wave
 import whisper
 import yaml
@@ -120,7 +121,10 @@ def main(page: ft.Page):
 
             # Only re-load the audio model if it changed.
             if (not audio_model or not loaded_audio_model) or ((audio_model and loaded_audio_model) and loaded_audio_model != model):
-                audio_model = whisper.load_model(model)
+                device = 'cpu'
+                if torch.has_cuda:
+                    device = 0
+                audio_model = whisper.load_model(model, device)
                 loaded_audio_model = model
 
             device_index = int(microphone_dropdown.value)
