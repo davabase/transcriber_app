@@ -123,7 +123,7 @@ def main(page: ft.Page):
             if (not audio_model or not loaded_audio_model) or ((audio_model and loaded_audio_model) and loaded_audio_model != model):
                 device = 'cpu'
                 if torch.has_cuda:
-                    device = 0
+                    device = "cuda"
                 audio_model = whisper.load_model(model, device)
                 loaded_audio_model = model
 
